@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { Button } from 'react-native-elements';
 
 class ReviewScreen extends Component {
   // NOTE: class property
-  static navigationOptions = {
+  // NOTE: Rewrite as follows at `87. Customization with Header Options` and `88. Programmatic Navigation`.
+  //   You should check out QA on each video.
+  static navigationOptions = ({ navigation }) => ({
     title: 'Review Jobs',
-    // NOTE: Rewrite as follows at `87. Customization with Header Options`.
-    headerRight: <Text>Right</Text>
-  }
+    headerRight: <Button title='Settings' onPress={() => navigation.navigate('settings')} />,
+  });
 
   render() {
     return (
