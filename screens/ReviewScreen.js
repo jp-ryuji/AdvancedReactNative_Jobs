@@ -8,7 +8,14 @@ class ReviewScreen extends Component {
   //   You should check out QA on each video.
   static navigationOptions = ({ navigation }) => ({
     title: 'Review Jobs',
-    headerRight: <Button title='Settings' onPress={() => navigation.navigate('settings')} />,
+    headerRight: (
+      <Button
+        title='Settings'
+        onPress={() => navigation.navigate('settings')}
+        backgroundColor="rgba(0,0,0,0)"
+        color="rgba(0, 122, 255, 1)" // Blue
+      />
+    )
   });
 
   render() {
