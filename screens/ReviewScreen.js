@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
 
 class ReviewScreen extends Component {
-  // NOTE: class property
+  // NOTE: This is a class property, that can't access props.
   // NOTE: Rewrite as follows at `87. Customization with Header Options` and `88. Programmatic Navigation`.
   //   You should check out QA on each video.
   static navigationOptions = ({ navigation }) => ({
