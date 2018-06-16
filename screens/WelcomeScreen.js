@@ -10,6 +10,7 @@ const SLIDE_DATA = [
 
 class WelcomeScreen extends Component {
   onSlideComplete = () => {
+    // NOTE: react-navigation automatically pass down a navigation prop to the component that it renders.
     this.props.navigation.navigate('auth');
   }
 
