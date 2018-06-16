@@ -37,7 +37,7 @@ class Slides extends Component {
     return (
       <ScrollView
         horizontal
-        style={{ flex: 1 }}
+        style={{ flex: 1 }} // To get the ScrollView component to fill up the entire screen
         pagingEnabled
       >
         {this.renderSlides()}
