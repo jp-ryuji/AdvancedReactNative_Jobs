@@ -12,6 +12,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "react-native-dotenv": "^0.1.1"
   }
 }
