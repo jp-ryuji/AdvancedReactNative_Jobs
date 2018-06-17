@@ -54,6 +54,10 @@ const MainNavigator = createBottomTabNavigator({
     deck: DeckScreen,
     review: ReviewNavigator
   })
+}, {
+  navigationOptions: {
+    tabBarVisible: false
+  }
 });
 
 export default class App extends React.Component {
