@@ -29,6 +29,7 @@ export const fetchJobs = (region, callback) => async (dispatch) => {
     const url = buildJobsUrl(zip);
     let { data } = await axios.get(url);
     dispatch({ type: FETCH_JOBS, payload: data });
+    // NOTE: 119. Navigating from Actions Creators (This was already added in a previos commit)
     callback();
   } catch(e) {
     console.error(e);
