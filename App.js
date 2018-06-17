@@ -2,7 +2,9 @@ import React from 'react';
 import { Platform, View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import { Constants } from 'expo';
+import { Provider } from 'react-redux';
 
+import store from './store';
 import AuthScreen from './screens/AuthScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import MapScreen from './screens/MapScreen';
@@ -57,9 +59,11 @@ const MainNavigator = createBottomTabNavigator({
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <MainNavigator />
-      </View>
+      <Provider store={store}>
+        <View style={styles.container}>
+          <MainNavigator />
+        </View>
+      </Provider>
     );
   }
 }
